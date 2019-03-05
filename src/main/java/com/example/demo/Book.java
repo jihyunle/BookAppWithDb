@@ -13,22 +13,22 @@ public class Book {
     public long id;
 
     @NotNull
-    private String title = "";
+    private String title;
 
     @NotNull
-    private String author = "";
+    private String author;
 
     @NotNull
-    private String description = "";
+    private String description;
 
     @NotNull
-    private double price = 0;
+    private double price;
 
     @NotNull
     private boolean isInStock;
 
     @NotNull
-    private int numberOfBooks = 0;
+    private int numberOfBooks;
 
     public Book(){
         System.out.println("In no-arg constructor");
