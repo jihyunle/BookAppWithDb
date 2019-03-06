@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Book {
@@ -13,18 +14,20 @@ public class Book {
     private long id;
 
     @NotNull
+    @Size(min = 3)
     private String title;
 
     @NotNull
+    @Size(min = 3)
     private String author;
 
     @NotNull
+    @Size(min = 10)
     private String description;
 
     @NotNull
     private double price;
 
-    @NotNull
     private boolean isInStock;
 
     @NotNull
