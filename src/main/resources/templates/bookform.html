@@ -58,6 +58,7 @@
                         <input type="checkbox" class="form-control" id="isInStock" th:field="*{isInStock}">
                         <span th:if="${#fields.hasErrors('isInStock')}" th:errors="*{isInStock}"></span>
                     </div>
+                    <!-- If not in stock, set numBooks to zero -->
                     <div class="form-group">
                         <label for="numberOfBooks">Number of Books</label>
                         <input type="text" class="form-control" id="numberOfBooks" th:field="*{numberOfBooks}">
