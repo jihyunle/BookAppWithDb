@@ -32,9 +32,9 @@ public class HomeController {
         if (result.hasErrors()){
             return "bookform";
         }
-//        if (book.getIsInStock()==false){
-//            book.setNumberOfBooks(0);
-//        }
+        if (book.getIsInStock()==false){
+            book.setNumberOfBooks(0);
+        }
         bookRepository.save(book);
         return "redirect:/";
 

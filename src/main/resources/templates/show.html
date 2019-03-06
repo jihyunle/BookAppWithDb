@@ -21,10 +21,12 @@
     </header>
 
     <div class="container">
-        <h3>Showing details of the book you've selected:</h3>
+        <p>
+            <h3>Showing details of the book you've selected:</h3>
+        </p>
     </div>
 
-    <section>
+    <section class="container">
         Title : <span th:text="${book.title}"></span><br>
         Author : <span th:text="${book.author}"></span><br>
         Description : <span th:text="${book.description}"></span><br>
